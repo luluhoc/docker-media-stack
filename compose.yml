@@ -833,7 +833,7 @@ services:
       traefik.http.routers.photoprism.middlewares: authelia@docker
 
   photoprism-mariadb:
-    image: mariadb:10.7
+    image: mariadb:10.11
     <<: *restart
     <<: *logging
     environment:
